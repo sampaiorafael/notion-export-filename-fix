@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2017",
+    "outDir": "./dist",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "declaration": true,
+    "incremental": true,
+  },
+  "include": [
+    "**/src/**/*.ts",
+    "**/test/**/*.ts",
+  ],
+  "exclude": [
+    "./dist/**/*"
+  ]
+}

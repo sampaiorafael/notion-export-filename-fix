@@ -1,0 +1,39 @@
+{
+  "name": "notion-export-filename-fix",
+  "version": "1.0.0",
+  "description": "Notion export filenames and dirs fix",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+		"build:dev": "tsc -w",
+		"start:ts": "ts-node-dev src/index.ts",
+		"start:dev": "nodemon --watch ./src/**/* -e ts --exec npm run start:ts",
+		"start:dev:js": "concurrently \"tsc -w\" \"nodemon dist/index.js\""
+  },
+  "devDependencies": {
+		"@types/node": "^17.0.23",
+		"concurrently": "^7.1.0",
+		"nodemon": "^2.0.15",
+		"ts-node-dev": "^1.1.8",
+		"typescript": "^4.6.3"
+	},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampaiorafael/notion-export-filename-fix.git"
+  },
+  "keywords": [
+    "notion",
+    "export",
+    "file",
+    "hash",
+    "id",
+    "fix",
+    "dir"
+  ],
+  "author": "Rafael Sampaio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sampaiorafael/notion-export-filename-fix/issues"
+  },
+  "homepage": "https://github.com/sampaiorafael/notion-export-filename-fix#readme"
+}
